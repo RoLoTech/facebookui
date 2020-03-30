@@ -1,0 +1,342 @@
+body {
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.header {
+    background: rgb(63, 101, 180);
+    color: #f1f1f1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.footer {
+    padding: 10px;
+    background: rgba(216, 216, 216, 0.856);
+    color: #f1f1f1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.iconContainer div {
+    width: 300px;
+    height: 50px;
+    margin-left: -25px; 
+}
+
+.content {
+    padding: 50px;
+}   
+
+.searchBarContainer {
+    width: 25%;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: -50%;
+}
+
+.searchBar {
+    height: 30px;
+    width: 75%;
+    border-radius: 30px;
+    background: rgb(20, 47, 132);
+    border: none;
+    color: white;
+    text-align: center;
+}
+
+.searchBar::placeholder {
+    color: white;
+    opacity: 1;
+}
+  
+.searchBar:-ms-input-placeholder {
+    color: white;
+}
+  
+.searchBar::-ms-input-placeholder {
+    color: white;
+}
+
+.searchBar::-webkit-input-placeholder {
+    text-align: center;
+}
+ 
+.searchBar:-moz-placeholder {
+    text-align: center;  
+}
+ 
+.searchBar::-moz-placeholder {
+    text-align: center;
+}
+ 
+.searchBar:-ms-input-placeholder {  
+    text-align: center; 
+}
+
+#cameraIcon {
+    background: none;
+}
+
+#messengerIcon {
+    background: none;
+}
+
+#newsFeedIcon {
+    background: none;
+    background-image: url("../img/feed.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 14%;
+}
+
+#friendRequestsIcon {
+    background: none;
+    background-image: url("../img/friends.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#marketplaceIcon {
+    background: none;
+    background-image: url("../img/marketplace.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#notificationBellIcon {
+    background: none;
+    background-image: url("../img/notification.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#moreIcon {
+    background: none;
+    background-image: url("../img/more.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header .iconContainer {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+      
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+}
+
+.flexContainer {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+        
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+}
+
+.flexItem:nth-of-type(1) { flex-grow: 1; }
+.flexItem:nth-of-type(2) { flex-grow: 2; }
+.flexItem:nth-of-type(3) { flex-grow: 1; }
+
+.flexItem {
+    background: rgb(63, 101, 180);
+    line-height: 70px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    max-width: 50px;
+    max-height: 50px;
+    vertical-align: middle;
+}
+
+.feed {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+  
+.flexFeedAlignment:nth-of-type(1) {
+    flex-grow: 2;
+    background: none;
+}
+
+.flexFeedAlignment:nth-of-type(2) { 
+    flex-grow: 5;
+    background: none;
+}
+
+.flexFeedAlignment:nth-of-type(3) {
+    flex-grow: 2;
+    background: none;
+}
+  
+.flexFeedAlignment {
+    background: tomato;
+    border: 3px solid rgba(0,0,0,.2);
+    line-height: 3000px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+.postContainer {
+    height: 100%;
+}
+
+.flexPostAlignment {
+    background: none;
+    border: 3px solid rgba(0,0,0,.2);
+    line-height: 500px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+.flexPostAlignment:nth-of-type(1) {
+    flex-grow: 1;
+}
+
+.flexPostAlignment:nth-of-type(2) {
+    flex-grow: 8;
+    background-color: rgb(202, 206, 215);
+}
+
+.flexPostAlignment:nth-of-type(3) {
+    flex-grow: 1;
+}
+
+#postAlignment {
+    height: 100%;
+}
+
+.postBox {
+    margin-top: 25px;
+    background-color: white;
+    width: 100%;
+    height: 400px;
+}
+
+.userDataBox {
+    height: 50px;
+}
+
+.postContentBox {
+    background-color: orange;
+    height: 350px;
+}
+
+.userTextBox {
+    background-color: black;
+    height: 50px;
+}
+
+.postImageBox {
+    background-image: url("../img/postBackground.png");
+    background-size: cover;
+    height: 175px;
+}
+
+.postTextBox {
+    background-color: black;
+    height: 75px;
+}
+
+.reactionsBar {
+    background-color: white;
+    height: 25px;
+}
+
+.actionsBar {
+    background-color: black;
+    height: 25px;
+}
+
+#userDataContent {
+    height: 100%;
+}
+
+.userDataAlignment {
+    background-color: red;
+    height: 100%;
+}
+
+.userDataAlignment:nth-of-type(1) {
+    flex-grow: 1;
+    background: none;
+}
+
+.userDataAlignment:nth-of-type(2) {
+    flex-grow: 13;
+}
+
+.userDataAlignment:nth-of-type(3) {
+    flex-grow: 1;
+}
+
+#userDataContent {
+    line-height: 100%;
+}
+
+.username {
+    height: 25px;
+    background-color: white;
+}
+
+.timestamp {
+    height: 25px;
+    background-color: white;
+}
+
+.usernameText {
+    font-size: 2vh;
+    text-align: left;
+    color: black;
+    background: none;
+    margin-top: -3vh;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
