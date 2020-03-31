@@ -1,5 +1,6 @@
 body {
     overflow-y: scroll;
+    background-color: rgb(202, 206, 215);
 }
 
 body::-webkit-scrollbar {
@@ -199,22 +200,26 @@ body::-webkit-scrollbar {
   
 .flexFeedAlignment:nth-of-type(1) {
     flex-grow: 2;
-    background: none;
+    background-color: white;   
+    border-radius: 5px;
+    margin: 0% 2%;
 }
 
 .flexFeedAlignment:nth-of-type(2) { 
     flex-grow: 5;
-    background: none;
+    background-color: white;
+    border-radius: 3px;
 }
 
 .flexFeedAlignment:nth-of-type(3) {
     flex-grow: 2;
-    background: none;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0% 2%;
 }
   
 .flexFeedAlignment {
     background: tomato;
-    border: 3px solid rgba(0,0,0,.2);
     line-height: 3000px;
     color: white;
     font-weight: bold;
@@ -228,7 +233,6 @@ body::-webkit-scrollbar {
 
 .flexPostAlignment {
     background: none;
-    border: 3px solid rgba(0,0,0,.2);
     line-height: 500px;
     color: white;
     font-weight: bold;
@@ -243,6 +247,7 @@ body::-webkit-scrollbar {
 .flexPostAlignment:nth-of-type(2) {
     flex-grow: 8;
     background-color: rgb(202, 206, 215);
+    border-radius: 5px; 
 }
 
 .flexPostAlignment:nth-of-type(3) {
@@ -281,7 +286,7 @@ body::-webkit-scrollbar {
 }
 
 .postTextBox {
-    background-color: black;
+    background-color: rgb(202, 206, 215);
     height: 75px;
 }
 
@@ -293,6 +298,7 @@ body::-webkit-scrollbar {
 .actionsBar {
     background-color: black;
     height: 25px;
+    border-radius: 3px;
 }
 
 #userDataContent {
@@ -300,7 +306,7 @@ body::-webkit-scrollbar {
 }
 
 .userDataAlignment {
-    background-color: red;
+    background-color: white;
     height: 100%;
 }
 
@@ -324,6 +330,7 @@ body::-webkit-scrollbar {
 .username {
     height: 25px;
     background-color: white;
+    vertical-align: middle;
 }
 
 .timestamp {
