@@ -16,6 +16,7 @@ html, body {
 .displayContainer {
     height: 40vh;
     width: 100vw;
+    vertical-align: bottom;
 }
 
 .inputValue {
@@ -25,8 +26,9 @@ html, body {
     height: 100%;
     width: 100%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 10vh;
-    text-indent: 78.5vw;
+    font-size: 13vh;
+    text-indent: 76.5vw;
+    margin-top: 25%;
 }
 
 ::placeholder {
@@ -55,6 +57,7 @@ table {
     width: 100%;
     border: none;
 }
+
 table td {
     white-space: normal;
     word-wrap: break-word;
@@ -127,23 +130,55 @@ td {
     background-color: rgb(254, 158, 9);
 }
 
+#equalButton:active {
+    background-color: rgb(253, 253, 253);
+    color: rgb(254, 158, 9);
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
 #plusButton {
     background-color: rgb(254, 158, 9);
+}
 
+#plusButton:active {
+    background-color: rgb(253, 253, 253);
+    color: rgb(254, 158, 9);
+    transition: all 0.3s ease;
+    opacity: 1;
 }
 
 #minusButton {
     background-color: rgb(254, 158, 9);
+}
 
+#minusButton:active {
+    background-color: rgb(253, 253, 253);
+    color: rgb(254, 158, 9);
+    transition: all 0.3s ease;
+    opacity: 1;
 }
 
 #multiplyButton {
     background-color: rgb(254, 158, 9);
+}
 
+#multiplyButton:active {
+    background-color: rgb(253, 253, 253);
+    color: rgb(254, 158, 9);
+    transition: all 0.3s ease;
+    opacity: 1;
 }
 
 #divideButton {
     background-color: rgb(254, 158, 9);
+}
+
+#divideButton:active {
+    background-color: rgb(253, 253, 253);
+    color: rgb(254, 158, 9);
+    transition: all 0.3s ease;
+    opacity: 1;
 }
 
 #percentageButton {
@@ -160,3 +195,18 @@ td {
     background-color: rgb(165, 165, 165);
     color: rgb(19, 19, 19);
 }
+
+.calcButton:active {
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.calcButton:focus{
+    outline: none;
+}
+/* .calcButton:active {
+    outline: none;
+    color: #fff;
+    background-color: #3db5eb;
+    border-color: #3db5eb;
+  } */
