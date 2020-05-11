@@ -10,8 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "browserify": "^16.5.1",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongodb": "^3.5.7",
-    "mongodb-client-encryption": "^1.0.1"
+    "mongodb-client-encryption": "^1.0.1",
+    "tabulator-tables": "^4.6.2"
   }
 }
