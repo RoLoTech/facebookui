@@ -80,7 +80,7 @@ function installEvents() {
 		{
 			id: '#tabbar-button1',
 			fn: () => {
-				mui.alert("tab 1","Selected");
+				mui.viewport.showPage("home-page", "DEF");
 				return false;
 			}
 		},

@@ -1,4 +1,4 @@
-@CHARSET "UTF-8";
+@charset "UTF-8";
 
 @font-face {
   font-family: 'FontAwesome';
@@ -33,7 +33,7 @@ a {
 	height: 40px;
 	margin: auto;
 	background-position: center;
-	background-image: url(images/pw-logo-40.png);
+	background-image: url(images/watchlist-logo-40.png);
 	background-repeat: no-repeat;
 }
 .mui-page-title {
@@ -43,7 +43,9 @@ a {
 	padding-top: 12px;
 	color: #ffffff;
 }
-.mui-page-body {}
+
+/*.mui-page-body {}*/
+
 .mui-page-body-content {
 	padding: 10px;
 }
@@ -156,3 +158,34 @@ a {
 .mui-panel-header {
 	display: none;
 }
+
+.side-menu-list {
+	counter-reset: index;  
+	padding: 0;
+	max-width: 300px;
+}
+  
+.side-menu {
+	counter-increment: index; 
+	display: flex;
+	align-items: center;
+	padding: 12px 0;
+	box-sizing: border-box;
+}
+  
+.side-menu::before {
+    content: counters(index, ".", decimal-leading-zero);
+    font-size: 1.5rem;
+	text-align: right;
+	font-weight: bold;
+	min-width: 50px;
+	padding-right: 12px;
+	font-variant-numeric: tabular-nums;
+	align-self: flex-start;
+	background-image: linear-gradient(to bottom, rgb(57, 212, 161), orangered);
+	background-attachment: fixed;
+	background-clip: border-box;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+} 
+  
